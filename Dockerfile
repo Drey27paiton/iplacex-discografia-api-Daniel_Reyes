@@ -4,7 +4,7 @@ WORKDIR /app
 # COPY ./build.gradle .
 # COPY ./settings.gradle .
 # COPY src ./src
-RUN chmod +x gradlew
+RUN chmod +x ./gradlew
 COPY . .
 RUN ./gradlew build --no-daemon
 
